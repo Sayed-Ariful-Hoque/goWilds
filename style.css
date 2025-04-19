@@ -1,0 +1,1721 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* common css area start  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600px;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btnCommon {
+    background-color: #63ab45;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: 12px;
+}
+
+.btnCommon02 {
+    background-color: #e1eedf;
+    color: #63ab45;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* common css area end  */
+
+/* top menu area start  */
+.topMenu {
+    background: #61a844;
+    color: white;
+    font-size: 15px;
+}
+
+.locationEmailPart {
+    font-size: 12px;
+    display: flex;
+    /* align-items: center; */
+    gap: 0 20px;
+}
+
+.locationEmailPart a {
+    color: white;
+}
+
+.locationEmailPart a i {
+    margin-right: 5px;
+}
+
+.bookingLogoPart {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bookingLogoPart .leftPart {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+
+.bookingLogoPart .leftPart a {
+    color: white;
+    font-size: 12px;
+}
+
+.bookingLogoPart .rightPart {
+    background-color: #5b9d40;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.bookingLogoPart .rightPart ul {
+    display: flex;
+    gap: 0 20px;
+}
+
+.bookingLogoPart .rightPart ul li a {
+    color: white;
+}
+
+/* top menu area end  */
+
+
+/* <!-- bottomMenu area star  --> */
+.bottomMenu {
+    background-color: #ffffff;
+    /* padding: 15px 0; */
+}
+
+.bottomMenu nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.bottomMenu .logoArea a {
+    color: #050605;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.bottomMenu .logoArea img {
+    width: 30px;
+    align-items: center;
+}
+
+.bottomMenu .MenuListArea {
+    display: flex;
+    gap: 0 40px;
+}
+
+.bottomMenu .MenuListArea ul {
+    display: flex;
+    gap: 0 30px;
+}
+
+
+.MenuListArea ul li a {
+    color: #9c9ca4;
+    font-size: 11px;
+    transition: all .4s;
+}
+
+.MenuListArea ul li a:hover {
+    color: #5ea444;
+
+}
+
+.bottomMenu .MenuListArea ul li a i {
+    font-size: 7px;
+}
+
+.bottomMenu .MenuListArea .serceUser {
+    display: flex;
+    align-items: center;
+}
+
+
+.bottomMenu .MenuListArea .serceUser {
+    display: flex;
+    gap: 0 20px;
+}
+
+.bottomMenu .MenuListArea .serceUser .srcBroderRight {
+    border: 1px solid #e2eedd;
+    height: 30px;
+}
+
+.bottomMenu .MenuListArea .serceUser a {
+    color: rgb(117, 109, 109);
+    font-size: 12px;
+}
+
+.bottomMenu .MenuListArea .serceUser .srceIcon {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #e2eedd;
+    color: #5fa544;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 12px;
+    justify-content: center;
+}
+
+/* dropdown area start  */
+.MenuListArea ul li {
+    position: relative;
+}
+
+.Dropdown {
+    display: none;
+}
+
+.MenuListArea ul li:hover .Dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    z-index: 1;
+}
+
+.MenuListArea ul li:hover .Dropdown ul {
+    background: rgb(23, 32, 41);
+    display: block;
+    padding: 5px 0;
+    border-radius: 4px;
+}
+
+.MenuListArea ul li:hover .Dropdown ul li {
+    width: 120px;
+}
+
+.MenuListArea ul li:hover .Dropdown ul li a {
+    padding-left: 10px;
+}
+
+/* dropdown area start  */
+
+
+/* <!-- bottomMenu area end  --> */
+
+
+/* bannerarea area start  */
+.bannerarea {
+    background-image: url(imgs/banner/backgroundImg.jpg);
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.textInfo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.textInfo .tourAndTravelsBtn {
+    position: absolute;
+    border: none;
+    color: white;
+    left: -1%;
+    bottom: 97%;
+    transform: rotate(-18deg);
+    background-color: #f5911d;
+    padding: 10px 15px;
+}
+
+.textInfo h2 {
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.textInfo p {
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.textInfo p a {
+    color: #5ea444;
+}
+
+
+/* bannerarea area end  */
+
+
+/* serachBar Area start  */
+.searchBarAria {
+    font-size: 13px;
+}
+
+
+.sercBars{
+
+}
+.search-bar {
+    width: 962px;
+    position: absolute;
+    top: 95%;
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.search-item {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 1px solid #e0e0e0;
+
+}
+
+
+.search-item:last-child {
+    border-right: none;
+}
+
+.search-item label {
+    font-size: 14px;
+    color: #888;
+}
+
+.search-item select,
+.search-item input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.search-button {
+    background-color: #63ab45;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.search-button a {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.search-button:hover {
+    background-color: #57aa33;
+}
+
+.search-button i {
+    margin-right: 5px;
+}
+
+/* serachBar Area end  */
+
+
+/* popular activities area start  */
+
+.popularTextInfo {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.popularTextInfo a {
+    background: #ebf4e7;
+    padding: 10px 15px;
+    color: #63ab45;
+    border-radius: 8px;
+}
+
+.popularTextInfo h3 {
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+
+
+
+.popularImgs {
+    margin: 20px 0 50px 0;
+}
+
+.popularImgs .row {
+    display: flex;
+    margin: 0;
+    padding: 12px;
+
+}
+
+.popularImgs .service {
+    position: relative;
+    border-radius: 8px;
+
+}
+
+.popularImgs .logo img {
+    width: 100%;
+    aspect-ratio: .9;
+    object-fit: cover;
+    border-radius: 7px;
+    /* height: 100vh; */
+}
+
+.popularImgs .service .popilerTextIfon {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    top: 60%;
+    left: 8%;
+    width: 193px;
+    align-items: center;
+    padding: 11px;
+    border-radius: 5px;
+}
+
+.popularImgs .service .popilerTextIfon a {
+    color: #373c37;
+    font-size: 14px;
+}
+
+.popularImgs .service .popilerTextIfon .services .border {
+    width: 50px;
+    height: 4px;
+    border-radius: 8px;
+    background-color: #47a522;
+    margin-bottom: 12px;
+}
+
+.popularImgs .service .popilerTextIfon .popularArrosicon {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #63ab45;
+    margin-top: 8%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popularImgs .service .popilerTextIfon .popularArrosicon .fa-arrow-right {
+    text-align: center;
+
+    transform: rotate(330deg);
+
+}
+
+/* popular activities area end  */
+/* about Company start */
+.aboutCompanyArea {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.aboutCompany {}
+
+.aboutCompanyArea .aboutCompanyImgs {
+
+    position: relative;
+}
+
+.aboutCompanyImgs .aboutImgs img {
+    width: 100%;
+    aspect-ratio: 1.0;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.aboutCompanyImgs .logo {
+    position: absolute;
+    top: -15px;
+    left: -1px;
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    background: #5da73e;
+    border-radius: 7px;
+}
+
+.aboutCompanyImgs .logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.aboutCompanyImgs .cleintImgs {
+    background: #fff;
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: -14%;
+    transform: translateY(-80%);
+    border: 6px solid #fff;
+    border-radius: 25px;
+}
+
+.aboutCompanyImgs .cleintImgs img {
+    width: 100%;
+    aspect-ratio: 1.2;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.aboutCompanyImgs .imgesText {
+    background-color: #fefefe;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    padding: 15px;
+    border-radius: 8px;
+    position: absolute;
+    top: 100%;
+    right: -5%;
+    transform: translateY(-75%);
+}
+
+.aboutCompanyImgs .imgesText .aboutText {
+    border: 3px solid #f3972f;
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+
+.aboutCompanyImgs .imgesText .aboutText h6 {
+    font-size: 35px;
+    color: #5da740;
+}
+
+.aboutCompanyImgs .imgesText .aboutText p {
+    width: 80px;
+    font-size: 11px;
+    color: #6b6b72;
+    font-weight: 600;
+}
+
+.aboutCompanyText .btnCommon02 {
+    font-size: 20px;
+}
+
+.aboutCompanyText .aboutCompanyIconLogoTextInfo {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.aboutCompanyText h4 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.aboutCompanyText .icon {
+    width: 50px;
+}
+
+.aboutCompanyText .icon img {
+    width: 100%;
+}
+
+.aboutCompanyText .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fefefe;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.aboutCompanyText .logo img {
+    width: 20px;
+    text-align: center;
+    aspect-ratio: 0.98;
+    margin: 10px;
+}
+
+.aboutCompanyTextInfo h5 {
+    font-size: 17px;
+}
+
+.aboutCompanyTextInfo p {
+    color: #939399;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+/* about Company end */
+/* popularActivityArea start */
+.popularActivityArea {
+    background: #fff;
+}
+
+.popularActivityArea .popularActivity {
+    background: url(imgs/popularActivity/popularActivity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 25px;
+    background-position: center;
+    -webkit-border-radius: 25px;
+    padding-bottom: 150px;
+
+}
+
+
+.popularActivityText .btnCommon04 {
+    background: #2b3726;
+    margin-top: 100px;
+    padding: 10px 15px;
+    color: #f3911f;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.popularActivityArea .popularActivityText {
+    text-align: center;
+    color: #fff;
+}
+
+.popularActivityArea .popularActivityText h2 {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.adventureNature {
+    margin-top: 50px;
+}
+
+.adventureNatureLeft {
+    background: #ffffff;
+    padding: 23px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.adventureNatureLeft .nature0 {
+    background: #f3911f;
+    color: #fff;
+    display: flex;
+    font-size: 13px;
+    gap: 10px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.adventureNatureLeft .nature {
+    margin-top: 25px;
+    background: #f3f8f6;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.adventureNatureLeft .nature0 img,
+.adventureNatureLeft .nature img {
+    width: 30px;
+}
+
+.adventureNature .adventureNatureMiddel {
+    color: white;
+}
+
+.adventureNature .adventureNatureMiddel .imgs01 {
+    width: 80px;
+}
+
+.adventureNature .adventureNatureMiddel h2 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.adventureNature .adventureNatureMiddel p {
+    padding: 10px 0;
+    color: #d9dcda;
+    font-size: 15px;
+}
+
+.adventureNature .adventureNatureMiddel .imgs02 {
+    width: 150px;
+    margin: 10px 0;
+}
+
+.clients {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.clientsBox {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.clientsTitle {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.clientBar {
+    height: 8px;
+    width: 100%;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.clientPer {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 89%;
+    border-radius: 2px;
+    background: #62aa44;
+}
+
+.clientPer0 {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 86%;
+    border-radius: 2px;
+    background: #62aa44;
+
+}
+
+.toolTip {
+    position: absolute;
+    right: 10px;
+    top: -28px;
+}
+
+
+.adventureNature .adventureNatureRight img {
+    border-radius: 25px;
+    width: 330px;
+}
+
+/* popularActivityArea end */
+
+/* Featured tours area start */
+.featuredtTours {
+    padding: 50px 0;
+}
+
+.featuredtToursTextInfo {
+    text-align: center;
+}
+
+.featuredtToursTextInfo h3 {
+    width: 400px;
+    margin: 20px auto;
+}
+
+
+
+
+.featuredImges {
+    position: relative;
+}
+
+.featuredtToursImges .featuredImges a img {
+    width: 100%;
+    image-resolution: .98;
+    aspect-ratio: 0.9;
+    border-radius: 7px;
+}
+
+.featuredtToursImges .featuredImges .featuredImgesText {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0%;
+    background: rgb(0, 0, 0, 0.5);
+    left: 0;
+    height: 100%;
+    border-radius: 7px;
+
+}
+
+.featuredImgesText .featurTopText {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.featuredImgesText .featurTopText .btnCommon03 {
+    color: #fff;
+    background-color: #13afc2;
+    text-transform: uppercase;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.featuredImgesText .featurTopText .hart {
+    background-color: #444e5a;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.featuredImgesText .featurBottomText {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    padding-bottom: 20px;
+
+}
+
+.featuredImgesText .featurBottomText .reviewsIcon {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featuredImgesText .featurBottomText .reviewsIcon ul li i {
+    color: #f6921c;
+    font-size: 14px;
+}
+
+.featuredImgesText .featurBottomText .reviewsIcon .camera {
+    color: #fff;
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+
+}
+
+.featuredImgesText .featurBottomText h6 {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.featuredImgesText .featurBottomText .featuredlocations {
+    font-size: 10px;
+}
+
+.featuredImgesText .featurBottomText .featuredlocations a {
+    color: #fff;
+}
+
+.featuredImgesText .featurBottomText .featuredlocations a i {
+    color: #47a522;
+    margin-right: 5px;
+}
+
+.featuredImgesText .featurBottomText .featuredFroms a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.featuredImgesText .featurBottomText .featuredFroms a i {
+    color: #47a522;
+    margin-right: 5px;
+}
+
+.featuredImgesText .featurBottomText .featuredFroms a span {
+    color: #47a522;
+}
+
+.featuredImgesText .btnCommon04 {
+    color: #fff;
+    background-color: #f3911f;
+    text-transform: uppercase;
+    border: none;
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+
+
+
+.featuredServices {
+    padding-top: 50px;
+}
+
+.featuredServices .servicesInfo {
+    background: #fdfdfd;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.featuredServices .servicesInfo .serviceLeft {
+    width: 100px;
+    height: 100px;
+}
+
+.featuredServices .servicesInfo .serviceLeft img {
+    width: 100%;
+}
+
+.featuredServices .servicesInfo .serviceRight h6 {
+    text-transform: capitalize;
+}
+
+.featuredServices .servicesInfo .serviceRight p {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #6e6e71;
+    font-weight: 500;
+}
+
+/* Featured tours area end */
+
+/* checkAvailability Area start  */
+.checkAvailabilityArea {
+    background-color: #7e7e7e;
+    padding: 100px 0;
+}
+
+.checkAvaliabiltyLeft .vedeoLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.checkAvailabilityArea .checkAvaliabiltyLeft .chackbtn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    color: orange;
+    background: #858585;
+    margin-top: 70px;
+    font-size: 11px;
+}
+
+.checkAvailabilityArea .checkAvaliabiltyLeft p {
+    color: #fff;
+    line-height: 1.2;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.checkAvailabilityArea .checkAvaliabiltyright .checkRight {
+    text-align: center;
+    padding: 25px 0;
+    color: #fff;
+    border: 2px solid #848484;
+    border-radius: 5px;
+}
+
+.checkAvailabilityArea .checkAvaliabiltyright .checkRight img {
+    width: 70px;
+    aspect-ratio: 1.2;
+}
+
+.checkAvailabilityArea .checkAvaliabiltyright .checkRight p {
+    text-transform: capitalize;
+}
+
+/* checkAvailability Area end  */
+
+/* destination area start  */
+.destinationArea .destinationTextInfo {
+    padding-top: 50px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.destinationArea .destinationTextinfos .destinationTextInfo button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    background: #eaf3e6;
+    color: #79d056;
+    margin-bottom: 10px;
+}
+
+
+.destinationImgs {
+    margin-top: 20px;
+}
+
+.destinationImgs .travelTo {
+    /* width: 200px; */
+    position: relative;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+.destinationImgs .travelTo img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    aspect-ratio: .9;
+    object-fit: cover;
+}
+
+.destinationImgs .travelTo .tourBtn {
+    position: absolute;
+    text-transform: uppercase;
+    top: 10%;
+    right: 10%;
+    padding: 2px 10px;
+    background: #f6901c;
+    border-radius: 5px;
+    font-size: 8px;
+    color: white;
+}
+
+.destinationImgs .travelTo .tourText {
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    color: #ffffff;
+    transform: translateY(-100%);
+}
+
+.destinationImgs .travelTo .tourText a {
+    color: #47a522;
+}
+
+.destinationImgs .mideltour img {
+    aspect-ratio: .9;
+}
+
+/* destination area end  */
+
+/* Achievements area start  */
+.achievementsArea {
+    padding-top: 200px;
+}
+
+.achievements {
+    position: relative;
+}
+
+.achievementsArea .achievements .achievementsTitel {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    color: white;
+    top: -80%;
+}
+
+.achievementsArea .achievements .achievementsTitel h4 {
+    text-transform: uppercase;
+    color: #141a16;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.achievementsArea .achievements .achievementsTitel a {
+    position: absolute;
+    top: -11%;
+    left: -8%;
+    transform: rotate(-20deg);
+    background-color: #f7921e;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 11px;
+}
+
+/* .achievementsArea .achievements .achievementsTitel a {
+    position: absolute;
+    top: -11%;
+    left: 23%;
+    transform: rotate(-20deg);
+    background-color: #f7921e;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 11px;
+} */
+
+.achievementsTravlers {
+    margin-top: 50px;
+}
+
+.traveler {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 30px 0;
+}
+
+.traveler .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #e1ecdd;
+}
+
+.traveler .logo img {
+    width: 40px;
+    margin: 20px auto;
+}
+
+.traveler .text {
+    margin-top: 20px;
+}
+
+.traveler .text h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.traveler .text p {
+    color: #67676b;
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+/* Achievements area end  */
+
+
+/* ourTestimonialsArea start  */
+.ourTestimonialsArea {
+    background: #f0f5f3;
+    padding: 100px 0;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.ourTestimonialsArea .testimonials .tex {
+    margin: 20px 0;
+}
+
+.ourTestimonialsArea .testimonials h4 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.ourTestimonialsArea .testimonials .overviews {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 14px;
+    border-bottom: 4px solid #47a522;
+}
+
+.ourTestimonialsArea .testimonials .overviews .shep {
+    position: absolute;
+    background-color: #47a522;
+    width: 50px;
+    height: 50px;
+    left: 100%;
+    top: 0;
+    transform: translateX(-100%);
+    border-radius: 0 0 0 100%;
+}
+
+.ourTestimonialsArea .testimonials .overviews .shep {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourTestimonialsArea .testimonials .overviews ul {
+    gap: 0 5px;
+}
+
+.ourTestimonialsArea .testimonials .overviews ul li i {
+    color: #47a522;
+}
+
+.ourTestimonialsArea .testimonials .overviews p {
+    margin-top: 5px;
+    color: #7d807e;
+    line-height: 1.8;
+}
+
+.ourTestimonialsArea .testimonials .overviews .shep02 {
+    position: relative;
+    position: absolute;
+    background-color: white;
+    width: 94px;
+    height: 43px;
+    top: 100%;
+    left: 33%;
+    transform: translateX(-100%);
+    clip-path: polygon(99% 0, 0 0, 0 99%);
+    /* border-left: 3px solid #47a522; */
+    border-: 3px solid #47a522;
+
+}
+
+.ourTestimonialsArea .testimonials .overviews .shep03 {
+    position: absolute;
+    position: absolute;
+    width: 107px;
+    height: 10px;
+    top: 18px;
+    left: -9px;
+    transform: rotate(-25deg);
+    background: #47a522;
+
+
+    /*position: absolute;
+    background-color: white;
+    width: 94px;
+    height: 43px;
+    top: 99%;
+    left: 33%;
+    transform: translateX(-100%);
+    clip-path: polygon(99% 0, 0 0, 0 99%);
+    background: #47a522;
+    background-color: ;
+    */
+
+}
+
+.ourTestimonialsArea .testimonials .foundSeo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ourTestimonialsArea .testimonials .foundSeo .logo {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #47a522;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ourTestimonialsArea .testimonials .foundSeo .logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.ourTestimonialsArea .testimonials .foundSeo {}
+
+.ourTestimonialsArea .testimonials .foundSeo h4 {
+    font-size: 15px;
+}
+
+.ourTestimonialsArea .testimonials .foundSeo p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #7d807e;
+}
+
+/* ourTestimonialsArea end  */
+
+/* Recent news feed start  */
+.recentNews {
+    /* background: #c8c3c3; */
+    padding-bottom: 80px;
+}
+
+.RecentTextInfo .ResentText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ResentText .textInfoLeft button {
+    padding: 7px 15px;
+    background: #eaf3e6;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    color: #47a522;
+    margin-bottom: 20px;
+}
+
+.ResentText .textInfoLeft h4 {
+    width: 300px;
+}
+
+.textInfoRight button {
+    padding: 10px 15px;
+    color: white;
+    background: #47a522;
+    border-radius: 8px;
+    border: none;
+}
+
+.recentImges {
+    margin-top: 20px;
+}
+
+.updatenews {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.updatenews .topTextInfo {
+    display: flex;
+    font-size: 10px;
+}
+
+.updatenews .topTextInfo .dates {
+    background: #62aa44;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0 0 10px 10px;
+    width: 40px;
+    padding: 5px 5px 10px 5px;
+    text-align: center;
+}
+
+.updatenews .topTextInfo .dates a {
+    font-size: 12px;
+    color: white;
+    /* font-weight: 500; */
+}
+
+.bttomTextInfo {
+    margin-top: 100px;
+}
+
+.bttomTextInfo button {
+    padding: 2px 10px;
+    background-color: #f6911e;
+    color: white;
+    border: none;
+    font-size: 12px;
+}
+
+.adminComment {
+    display: flex;
+    gap: 20px;
+}
+
+.adminComment a {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #bfbfc3;
+}
+
+.adminComment a i {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #5fa841;
+}
+
+
+
+.bttomTextInfo h6 {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.bttomTextInfo p {
+    color: #828285;
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.bttomTextInfo a {
+    color: #828285;
+    font-size: 12px;
+}
+
+.bttomTextInfo a i {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #5fa841;
+}
+
+/* Recent news feed end  */
+
+/* discover aria start  */
+.discoverArea {
+    padding: 15px;
+}
+
+.discover {
+    position: relative;
+    margin-bottom: -100px;
+}
+
+.discovers {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+
+.discovers .imges {
+    position: relative;
+    width: 20%;
+    aspect-ratio: .1.5;
+}
+
+.discovers .imges img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.discovers .imges .disCoverTextInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0, 0, 0, .4);
+    color: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 8px;
+}
+
+.discovers .imges .disCoverTextInfo:hover {
+    opacity: 1;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.discovers .imges .disCoverTextInfo h5 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f7921e;
+}
+
+.discovers .imges .disCoverTextInfo h5 span {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.discovers .imges .disCoverTextInfo h6 {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.discovers .imges .disCoverTextInfo p {
+    font-size: 16px;
+}
+
+/* discover aria end  */
+
+
+/* support area start  */
+.supportAria {
+    background: #1d231f;
+    padding-top: 150px;
+}
+
+.supports {
+    display: flex;
+    justify-content: space-between;
+}
+
+.supports .left,
+.supports .right {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.supports .left .logos {
+    display: flex;
+    color: #9a9fa1;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.supportAria .supports p {
+    color: white;
+}
+
+.supportAria .supports .left .suppotIcon,
+.right .suppotIcon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #62aa44;
+    color: white;
+    box-shadow: 0 0 50px #62aa44;
+}
+
+.supports .right a {
+    background: #f6911d;
+    box-shadow: 0 0 50px #f6911d;
+}
+
+.supports .left a i,
+.right a i {
+    position: absolute;
+    top: 32%;
+    left: 32%;
+    rotate: 324deg;
+}
+
+.supports .right .logos {
+    display: flex;
+    color: #9a9fa1;
+    align-items: center;
+    gap: 0 20px;
+}
+
+
+.supports p {
+    width: 187px;
+}
+
+.supports .logos img {
+    width: 70px;
+    height: 70px;
+}
+
+/* support area end  */
+
+
+/* footer area start */
+
+.gowildsfooter {
+    background: #1d231f;
+    font-size: 14px;
+    padding: 50px 0;
+}
+
+.gowildsfooter hr {
+    width: 100%;
+    height: 1px;
+    color: #9a9fa1;
+    margin-bottom: 80px;
+}
+
+.gowildsfooter .footerPart img {
+    width: 40px;
+}
+
+.gowildsfooter .footerPart {
+    width: 200px;
+}
+
+.gowildsfooter .footerPart a {
+    color: white;
+    font-size: 20px;
+}
+
+.gowildsfooter .footerPart h6 {
+    margin-bottom: 20px;
+}
+
+.gowildsfooter .footerPart p {
+    color: #dde0dd;
+    font-size: 13px;
+    padding-bottom: 8px;
+}
+
+.gowildsfooter .footerPart ul {
+    display: flex;
+    gap: 5px;
+}
+
+.gowildsfooter .footerPart ul li {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #232a25;
+
+
+}
+
+.gowildsfooter .footerPart ul li a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    color: #dde0dd;
+    ;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.copyRights {
+    background: #101311;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+}
+
+
+
+.footerPages h6 {
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+.footerPages ul li {
+    color: white;
+    padding-bottom: 5px;
+}
+
+.footerPages ul a {
+    color: #dde0dd;
+
+}
+
+.footerNewsletter h6 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.footerNewsletter p {
+    color: #dde0dd;
+}
+
+
+
+.btnLocations {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+
+.btnLocations input{
+    padding: 7px;
+    background: #fff;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px 0 0 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
+.btnLocations button{
+    padding: 7px;
+    font-size: 14px;
+    width: 50px;
+    height: 45px;
+    background: #47a522;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.footerContact h6 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contacts .left p {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #404542;
+}
+
+.contacts {
+    display: flex;
+    gap: 0 20px;
+    margin-bottom: 8px;
+}
+
+.contacts .left p a {
+    position: absolute;
+    left: 28%;
+    top: 15%;
+    color: #60a543;
+}
+
+.contacts .right span {
+    color: #666866;
+}
+
+.contacts .right a {
+    font-size: 12px;
+    color: #dde0dd;
+}
+
+/* footer area end */
